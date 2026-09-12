@@ -19,7 +19,7 @@ export default function Hero({ onSearch }: HeroProps) {
 
   return (
     <section className="relative min-h-[620px] flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=2000&q=80')" }}>
+      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url(\"/images/Sunlight_pours_through_arches_of_stone,_into_water's_sapphire_heart%20copy.jpg\")" }}>
         <div className="absolute inset-0 bg-black/50" />
       </div>
 
