@@ -2,13 +2,13 @@ import { ShieldCheck, FileText, Mail, Phone, MapPin, Heart } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="bg-deepTeal-900 text-white">
+    <footer className="bg-neutral-900 text-white">
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-roseGold-400 to-softSand-400 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-xl bg-neutral-700 flex items-center justify-center">
                 <Heart className="w-5 h-5 text-white" />
               </div>
               <span className="text-xl font-bold">هم‌کوچ</span>
@@ -20,7 +20,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-4 text-softSand-300">دسترسی سریع</h4>
+            <h4 className="font-semibold mb-4 text-stone-300">دسترسی سریع</h4>
             <ul className="space-y-2.5 text-sm">
               <li>
                 <a href="#tours" className="text-white/60 hover:text-white transition flex items-center gap-2">
@@ -45,22 +45,22 @@ export default function Footer() {
 
           {/* Safety */}
           <div>
-            <h4 className="font-semibold mb-4 text-softSand-300">ایمنی بانوان</h4>
+            <h4 className="font-semibold mb-4 text-stone-300">ایمنی بانوان</h4>
             <ul className="space-y-2.5 text-sm text-white/60">
               <li className="flex items-start gap-2">
-                <ShieldCheck className="w-4 h-4 text-deepTeal-400 flex-shrink-0 mt-0.5" />
+                <ShieldCheck className="w-4 h-4 text-stone-400 flex-shrink-0 mt-0.5" />
                 راهنمای خانم در تمام طول تور
               </li>
               <li className="flex items-start gap-2">
-                <ShieldCheck className="w-4 h-4 text-deepTeal-400 flex-shrink-0 mt-0.5" />
+                <ShieldCheck className="w-4 h-4 text-stone-400 flex-shrink-0 mt-0.5" />
                 اقامتگاه‌های امن و اختصاصی
               </li>
               <li className="flex items-start gap-2">
-                <ShieldCheck className="w-4 h-4 text-deepTeal-400 flex-shrink-0 mt-0.5" />
+                <ShieldCheck className="w-4 h-4 text-stone-400 flex-shrink-0 mt-0.5" />
                 پشتیبانی ۲۴ ساعته
               </li>
               <li className="flex items-start gap-2">
-                <ShieldCheck className="w-4 h-4 text-deepTeal-400 flex-shrink-0 mt-0.5" />
+                <ShieldCheck className="w-4 h-4 text-stone-400 flex-shrink-0 mt-0.5" />
                 بیمه کامل مسافرتی
               </li>
             </ul>
@@ -68,18 +68,18 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold mb-4 text-softSand-300">تماس با ما</h4>
+            <h4 className="font-semibold mb-4 text-stone-300">تماس با ما</h4>
             <ul className="space-y-3 text-sm text-white/60">
               <li className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-deepTeal-400" />
+                <Phone className="w-4 h-4 text-stone-400" />
                 <span dir="ltr" style={{ textAlign: 'right' }}>۰۲۱-۸۸۸۸۲۲۲۲</span>
               </li>
               <li className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-deepTeal-400" />
-                info@torban.ir
+                <Mail className="w-4 h-4 text-stone-400" />
+                info@hamkoch.ir
               </li>
               <li className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-deepTeal-400" />
+                <MapPin className="w-4 h-4 text-stone-400" />
                 تهران، خیابان ولیعصر
               </li>
             </ul>
@@ -89,7 +89,7 @@ export default function Footer() {
         <div className="mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/40">
           <p>© ۱۴۰۵ هم‌کوچ — تمام حقوق محفوظ است.</p>
           <p className="flex items-center gap-1.5">
-            ساخته شده با <Heart className="w-3.5 h-3.5 text-roseGold-400 fill-roseGold-400" /> برای بانوان ایران
+            ساخته شده با <Heart className="w-3.5 h-3.5 text-stone-400 fill-stone-400" /> برای بانوان ایران
           </p>
         </div>
       </div>

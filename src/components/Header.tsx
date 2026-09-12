@@ -51,7 +51,7 @@ export default function Header() {
       <header className="absolute top-0 left-0 right-0 z-20">
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-roseGold-400 to-softSand-400 flex items-center justify-center shadow-lg">
+            <div className="w-10 h-10 rounded-xl bg-neutral-800 flex items-center justify-center shadow-lg">
               <Heart className="w-5 h-5 text-white" />
             </div>
             <span className="text-xl font-bold text-white drop-shadow-md">هم‌کوچ</span>

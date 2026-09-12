@@ -119,7 +119,7 @@ export default function App() {
   }, [tours, searchDestination, selectedTypes, selectedDifficulty, searchDifficulty, selectedDuration, searchFilterValues.maxBudget]);
 
   return (
-    <div className="min-h-screen bg-softSand-50">
+    <div className="min-h-screen bg-stone-50">
       <Header />
       <Hero onSearch={handleHeroSearch} />
       <RoomSharingBanner />
@@ -139,8 +139,8 @@ export default function App() {
 
       <main id="tours" className="max-w-7xl mx-auto px-4 py-10">
         <div className="mb-6">
-          <h2 className="text-2xl font-bold text-softSand-900 mb-1">تورهای ویژه بانوان</h2>
-          <p className="text-sm text-softSand-600">
+          <h2 className="text-2xl font-bold text-stone-800 mb-1">تورهای ویژه بانوان</h2>
+          <p className="text-sm text-stone-500">
             {loading
               ? 'در حال بارگذاری...'
               : `${filteredTours.length} تور یافت شد`}
@@ -163,27 +163,27 @@ export default function App() {
 
         {loading && (
           <div className="flex flex-col items-center justify-center py-20">
-            <Loader2 className="w-10 h-10 text-deepTeal-500 animate-spin mb-4" />
-            <p className="text-softSand-600">در حال بارگذاری تورها...</p>
+            <Loader2 className="w-10 h-10 text-stone-400 animate-spin mb-4" />
+            <p className="text-stone-500">در حال بارگذاری تورها...</p>
           </div>
         )}
 
         {error && (
-          <div className="bg-rose-100 border border-rose-200 text-rose-700 rounded-2xl p-6 text-center">
+          <div className="bg-stone-100 border border-stone-200 text-stone-600 rounded-2xl p-6 text-center">
             {error}
           </div>
         )}
 
         {!loading && !error && filteredTours.length === 0 && (
           <div className="flex flex-col items-center justify-center py-20 text-center">
-            <div className="w-16 h-16 rounded-full bg-softSand-100 flex items-center justify-center mb-4">
-              <SearchX className="w-8 h-8 text-softSand-400" />
+            <div className="w-16 h-16 rounded-full bg-stone-100 flex items-center justify-center mb-4">
+              <SearchX className="w-8 h-8 text-stone-400" />
             </div>
-            <h3 className="text-lg font-semibold text-softSand-800 mb-1">توری یافت نشد</h3>
-            <p className="text-sm text-softSand-600 mb-4">با فیلترهای انتخاب شده توری پیدا نشد.</p>
+            <h3 className="text-lg font-semibold text-stone-800 mb-1">توری یافت نشد</h3>
+            <p className="text-sm text-stone-500 mb-4">با فیلترهای انتخاب شده توری پیدا نشد.</p>
             <button
               onClick={handleClearFilters}
-              className="bg-deepTeal-500 hover:bg-deepTeal-600 text-white text-sm font-medium px-5 py-2.5 rounded-xl transition"
+              className="bg-neutral-800 hover:bg-neutral-700 text-white text-sm font-medium px-5 py-2.5 rounded-xl transition"
             >
               پاک کردن فیلترها
             </button>
