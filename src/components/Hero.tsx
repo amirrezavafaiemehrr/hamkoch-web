@@ -19,13 +19,8 @@ export default function Hero({ onSearch }: HeroProps) {
 
   return (
     <section className="relative min-h-[620px] flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0">
-        <img
-          src="https://images.pexels.com/photos/12245898/pexels-photo-12245898.jpeg?auto=compress&cs=tinysrgb&w=1920"
-          alt=""
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-l from-neutral-900/80 via-neutral-800/60 to-stone-900/40" />
+      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=2000&q=80')" }}>
+        <div className="absolute inset-0 bg-black/50" />
       </div>
 
       <div className="relative z-10 w-full max-w-5xl mx-auto px-4 py-20 text-center">
